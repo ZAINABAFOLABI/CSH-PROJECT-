@@ -1,0 +1,512 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     line-height: 1.4em;
+ }
+
+ a{
+     text-decoration: none;
+ }
+ p{
+    margin: 0.75rem 0;
+    font-size:20px;
+ }
+ P{
+    margin: 0.75rem 0;
+    font-size:20px;  
+ }
+
+ /*UTILITY CLASSES*/
+ .text-primary{
+     color: rgb(5, 37, 37);
+ }
+ .text-primary1{
+     color: rgb(46, 112, 112);
+ }
+ .text-primary3{
+     color: rgb(46, 112, 112);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 30px;
+     text-decoration: coral underline;
+     padding: 15px;
+ }
+ .text-secondary{
+     color:coral;
+     font-weight: 500;
+     font-size: 40px;
+ }
+ .text-secondary1{
+     color:coral;
+     font-weight: 500;
+     font-size: 40px;
+     text-decoration: underline azure 3px;
+     padding:30px 0px;
+     line-height: 1.5px;
+     
+     text-align: center;
+ }
+ .text-tertiary{
+     color:coral;
+     font-weight: 500;
+     font-size: 18px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .text-tertiary:hover{
+     background:rgb(125, 180, 180);
+     color:rgb(233, 207, 207);
+ }
+
+ 
+ .BOLD-HEADING{
+     font-size: 30px;
+     color: rgb(39, 119, 119);
+ }
+
+ 
+ .l-heading{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+    color: blanchedalmond;
+}
+.m-heading{
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 3rem;
+    text-align: center;
+}
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
+h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:3px rgb(70, 8, 8) underline;
+    text-align: center;
+    
+}
+
+h1{
+    font-size:  2.5rem;
+    line-height: 1.9rem;
+}
+h5{
+    font-size: 40px;
+    line-height: 2.5rem;
+    text-align: center;
+    color:rgb(5, 37, 37);
+    margin:28px 0px ;
+    text-decoration:3px rgb(70, 8, 8) underline;
+    
+}
+
+h6{
+    color: #eee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    padding: 3px;
+    text-decoration: 1px coral dotted;
+}
+
+.lead{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    line-height: 1.4rem;
+    color:azure;
+    animation-name: moveInleft;
+    animation-duration: 5s;
+}
+
+#lead-animation, .lead{
+    animation-name:moveInLeft;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft{
+    0%{
+     opacity: 0;
+     transform: translateX(-100%);
+    }
+
+    80%{
+        transform: translateX(20px);  
+
+    }
+
+    100%{
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+
+.btn {
+    background:rgb(16, 90, 90);
+    color: #fff;
+    display: inline-block;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: large;
+    border:  coral 5px solid;
+    border-radius: 3px;
+    animation-name:moveInRight;
+    animation-duration: 5s;
+}
+
+
+@keyframes moveInRight{
+    0%{
+     opacity: 0;
+     transform: translateX(100%);
+    }
+
+    80%{
+        transform: translateX(-10px);  
+
+    }
+
+    100%{
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+
+ .container, .btn-light{
+    background: #fff;
+    color: #333;
+    padding: 10px;
+    
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0px 20px;
+    overflow: auto;
+
+}
+.bg-light{
+    color: #333;
+    background: #f4f4f4;
+}
+
+.btn:hover{
+   background:lemonchiffon;
+   color:coral;
+}
+
+.box{
+    width: 33.3%;
+    float:left;
+    padding:50px;
+    text-align:center;
+    }
+
+
+.box i{
+    margin-bottom: 10px;
+}
+
+ /*NAVBAR*/
+ #navbar {
+    background:white;
+    color: #333;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    line-height: 1.9rem;    
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+   color:#333;
+   padding: 0.75rem;
+   margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+   background:rgb(223, 86, 36); 
+   color:#fff;
+   border-radius: 5px;
+}
+
+.current{
+    background:coral; 
+    color:rgb(5, 37, 37);
+    border-radius: 5px;
+
+}
+
+/*SHOWCASE*/
+#showcase{
+    /*background: rgb(39, 119, 119) ;*/
+    /*background: rgb(43, 146, 146);*/
+    /*background: rgb(5, 37, 37);*/
+   
+   /* background:rgb(221, 240, 240) ;*/
+
+   background: url(/IMAGES/CLINIC\ BASICS.jpg) no-repeat center center/cover;
+  /* background: url(/IMAGES/dental\ clinic.jpg) no-repeat center center/cover;*/
+
+   /*height: 500px;*/
+   
+    width: 100vw;
+    height: 100vh;
+    color: black;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding:0 9rem;
+    width: 100vw;
+    height: 100vh;
+
+    /*OVERLAY*/
+position: absolute;
+top: 60;
+left: 0;
+background-color: rgba(0, 0,0, 0.5);
+}
+    
+
+
+#covid19{
+    font-size: 30px;
+    line-height: 2.5rem;
+    text-align: center;
+    color:rgb(5, 37, 37);
+    margin:28px 0px ;
+    text-decoration:3px rgb(70, 8, 8) underline;
+    padding-top: 19px;
+    
+}
+#covid{
+    background:rgb(245, 234, 234) ;
+    margin-top: 19px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7rem;
+}
+
+#appointment-booking{
+    background:rgb(245, 234, 234) ;
+    margin-top: 19px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7rem;
+    height: 500px;
+
+}
+
+#important{
+    color: crimson;
+    font-size: 27px;
+}
+
+/*WHY*/
+#why .items{
+    background: azure;
+    color: black;
+    display: flex;
+    text-align: center;    
+}
+
+#why .items .item{
+    flex: 1;
+    padding: auto;
+    margin: 1.3rem;
+    line-height: 1.6rem;
+}
+
+/* Section :Brief-Review*/
+
+#brief-review .reviews{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(5, 37, 37);
+    color: #fff;
+    text-decoration:3px coral underline;
+    display: flex;
+}
+
+#brief-review .reviews #review{
+    flex: 1;
+    margin: 1.3rem;
+    line-height: 3.0rem;
+    padding: auto;
+    width: 100%;
+    height: 90px;        
+}
+
+#CSH-DOCTORS{
+    /*background: url(/IMAGES/dental\ clinic.jpg) no-repeat center center/cover;*/
+    background: rgb(233, 240, 240);
+
+    height: 500px; 
+    display: inline-block;
+   
+}
+
+#doctor{
+    width:30% ;
+    height:300px ;
+    display: inline;
+    margin-left: 10px;
+    padding: 0px 30px;
+    margin-left: 10px;
+    border: 3px solid coral;
+    border-radius: 30%;
+}
+
+/*#our-services{
+    height: 350px;
+    display: flex;
+
+    flex-wrap: wrap;
+    background: rgb(233, 208, 208);
+    color: rgb(5, 37, 37);
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}*/
+
+
+
+ #Services #our-services  #item-1{
+
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background: rgb(5, 37, 37);
+     color: #fff;
+     text-decoration:3px coral underline;
+    margin: 1.3rem;
+    text-decoration: 1px dotted aliceblue;
+    
+    padding: auto;
+    width: 100%;
+    height: 110px; 
+    text-align: center;
+    
+}
+
+#our-services, #item-1{
+   /* background: rgb(100, 182, 182);*/
+    background: rgb(5, 37, 37);
+   /* color:rgb(43, 146, 146) ;*/
+    color:#fff;    
+}
+
+#our-services{
+    line-height: 3rem;
+}
+
+/*ABOUT*/
+#OUR-HISTORY{
+    background: rgb(221, 240, 240);
+    padding: 3rem;
+    line-height: 1.7rem;
+}
+
+#container .box3{
+    background:  rgb(221, 240, 240);
+    text-align: center;
+    margin-top: 45px;
+    padding-top: 30px;
+}
+
+.box3{
+    font-size:20px ;
+}
+
+ /*Contact Form*/
+
+ #contact-form{
+     background-color: antiquewhite ;
+ }
+ #contact-form .form-group{
+    margin-bottom: 20px;
+}
+#contact-form label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border:rgb(233, 208, 208) 2px solid;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline :none;
+    border-color:coral;
+
+}
+
+/*FACILITY*/
+#facility, #facility-background{
+    background:antiquewhite ;
+    color: azure;
+} 
+    
+#main-facility-clinic{
+    display: block;
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    padding: 10px 0;
+    
+
+}
+
+/*CAREERS*/
+
+#careers{
+    background:rgb(221, 240, 240) ;
+    color: rgb(5, 37, 37);
+    height: 800px;
+    padding: 3rem;
+}
+
+/*FOOTER*/
+
+#main-footer{
+    background:azure;
+    color: rgb(5, 37, 37);
+    padding: auto;
+    font-size: 19px;
+    text-align: center;
+    height: 50px;
+}
