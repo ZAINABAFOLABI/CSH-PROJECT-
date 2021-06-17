@@ -1,0 +1,165 @@
+#navbar .logo{
+    float: none;
+    text-align: center;
+}
+
+#navbar ul, #navbar ul li{
+    float: none;
+}
+
+#navbar ul li a{
+    padding: 5px;
+    border-bottom:lemonchiffon dotted 1px;
+}
+
+.m-heading{
+    font-size: 33px;
+    line-height: 1.4;
+    margin: 3rem;
+    text-align: center;
+}
+
+h3{
+    line-height: 1.9rem;
+    font-size: 22px;
+}
+
+ 
+.lead{
+        font-size: 1.4rem;
+        font-weight: 600px;
+        font-style: normal;
+        margin: 30px 0px;
+        line-height: 1.9rem;
+        color:black;
+        animation-name: moveInleft;
+        animation-duration: 5s;
+    }
+
+    #lead-animation, .lead{
+        animation-name:moveInLeft;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+        animation-timing-function: ease-out;
+        
+    }
+
+    .btn {
+        background:rgb(16, 90, 90);
+        color: #fff;
+        display: inline-block;
+        padding: 0.75rem 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        border:  coral 5px solid;
+        border-radius: 3px;
+        animation-name:moveInRight;
+        animation-duration: 5s;
+    
+    }
+
+    /*SHOWCASE*/
+#showcase{
+    /*background: rgb(39, 119, 119) ;*/
+    /*background: rgb(43, 146, 146);*/
+    /*background: rgb(5, 37, 37);*/
+   
+    background:rgb(221, 240, 240) ;
+   
+    
+    height: 80vh;
+    color: black;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding:0 9rem;
+    
+}
+
+/*WHY*/
+#why .items{
+    background: azure;
+    color: black;
+    display: block;
+    text-align: center;
+    
+    
+}
+
+#why .items .item{
+    /*flex: 1;*/
+    padding: auto;
+    margin: 1.3rem;
+    line-height: 1.6rem;
+
+}
+
+#why .items{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.7rem;
+    letter-spacing:1px ;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#brief-review .reviews #review{
+    height: 60px;
+}
+
+/* Section :Brief-Review*/
+
+#brief-review .reviews{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(5, 37, 37);
+    color: #fff;
+    text-decoration:3px coral underline;
+    display: block;
+    text-align: center;
+}
+
+
+    h1{
+        font-size:  0.9rem;
+        line-height: 1.9rem;
+        letter-spacing: 3px;    
+    }
+
+/*BOOK AN APPOINTMENT*/
+#appointment-booking{
+    background:rgb(245, 234, 234) ;
+    margin-top: 19px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.7rem;
+    height: 700px;
+}   
+
+#covid{
+    background:rgb(235, 211, 211) ;
+    margin-top: 19px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.9rem;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*ABOUT*/
+#about-p,.box3 {
+    font-size:25px;
+    line-height:2.2rem;
+    text-align: center;
+}
+
+.box3{
+    font-size:25px;
+}
